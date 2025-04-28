@@ -31,9 +31,9 @@ Due to size limitations, the datasets are not included in this repository. You c
    ```
 
 ## Usage
- How to Run (Using Google Colab)
+## google colab
+How to Run (Using Google Colab)
 Open the project notebook in Google Colab:
-
 
 Upload your dataset:
 
@@ -52,8 +52,28 @@ The trained model creditcard_fraud_model.pkl can be uploaded to the Colab enviro
 
 Follow the notebook steps to preprocess data, make predictions, and evaluate performance.
 
+## jupyter notebook
+ Running the Project in Jupyter Notebook (Local)
+Open the Jupyter Notebook:
+
+Open the project notebook (creditcard_fraud_detection.ipynb) and follow the steps to:
+
+Upload the dataset
+
+Preprocess the data
+
+Load the trained model (creditcard_fraud_model.pkl)
+
+Make predictions and evaluate results
+
+
 ## Model Information
 The project uses a `RandomForestClassifier` with balanced class weights to handle class imbalance in the dataset. The model is trained on preprocessed transaction data to predict fraudulent activities.
+Algorithm: Random Forest Classifier
+Handling Imbalance: Class weights set to 'balanced'
+Input Features: Transaction details like amount, category, timestamps, etc.
+Target Variable: fraud (1: Fraudulent, 0: Legitimate)
+
 
 ## Results
 The model's performance is evaluated using metrics such as accuracy, precision, recall, and F1-score. Visualizations are provided in the notebook to illustrate the results.
